@@ -1,0 +1,2 @@
+export const metadata = { title: "About | Opportunity Hub" };
+export default function About() { return <main className="legal"><p className="eyebrow">ABOUT US</p><h1>Making opportunities easier to find.</h1><p>Opportunity Hub is an independent job board that brings open roles into one clear, shareable place. Each listing links directly to the employer’s chosen application process.</p><p>We aim to publish accurate, useful openings and remove a listing when it is no longer active.</p></main>; }

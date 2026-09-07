@@ -1,0 +1,2 @@
+import { getJobs } from "../lib/jobs";
+export default async function sitemap() { const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"; const jobs = await getJobs(); return [{ url: base, lastModified: new Date() }, { url: `${base}/about`, lastModified: new Date() }, { url: `${base}/privacy`, lastModified: new Date() }, { url: `${base}/terms`, lastModified: new Date() }, ...jobs.map(job => ({ url: `${base}/jobs/${job.slug}`, lastModified: new Date(job.createdAt) }))]; }
